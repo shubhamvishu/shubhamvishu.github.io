@@ -7,7 +7,7 @@
 		}
 		html{
 			background-color: rgb(233,233,233);
-			background-image: url("http://www.allwhitebackground.com/images/2/2274.jpg");
+			background-image: linear-gradient(to right,#fff,#eee);
 			background-attachment: fixed;
 		    position: absolute;
 
