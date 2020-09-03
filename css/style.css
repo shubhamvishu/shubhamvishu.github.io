@@ -347,8 +347,8 @@ figure {
             border: 1px solid rgb(13, 163, 38);
             background: rgb(13, 163, 38) !important; }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-              background: transparent !important;
-              border: 1px solid #000 !important; }
+              background: rgb(13, 163, 38) !important;
+              border: 1px solid rgb(13, 163, 38) !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
@@ -818,6 +818,21 @@ body.offcanvas {
       background: #4054b2; }
     .progress-bar.color-6 span {
       color: #4054b2; }
+  .progress-bar.color-7 {
+    background: #d14f28; }
+    .progress-bar.color-7:after {
+      background: #d14f28; }
+    .progress-bar.color-7 span {
+      color: #d14f28; }
+  .progress-bar.color-8 {
+    background: #49384e; }
+    .progress-bar.color-8:after {
+      background: #49384e; }
+    .progress-bar.color-8 span {
+      color: #49384e; }
+    
+    
+    
 
 .colorlib-feature {
   text-align: left;
