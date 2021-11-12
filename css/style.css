@@ -81,6 +81,7 @@ figure {
   transition: 0.5s; }
   .list{
     color:#f35633;
+    text-align: left;
   }
   @media screen and (max-width: 768px) {
     #colorlib-aside {
@@ -121,7 +122,8 @@ figure {
       padding-right: .3em; }
   #colorlib-aside #colorlib-main-menu {
     display: block;
-    width: 100%; }
+    width: 100%;
+   }
     #colorlib-aside #colorlib-main-menu .collapse {
       display: block !important; }
     #colorlib-aside #colorlib-main-menu ul {
@@ -132,7 +134,7 @@ figure {
         #colorlib-aside #colorlib-main-menu ul {
           margin: 0 0 2em 0; } }
       #colorlib-aside #colorlib-main-menu ul li {
-        margin: 0 0 10px 0;
+        margin: 0 0 15px 0;
         padding: 0;
         list-style: none;
         font-size: 12px;
@@ -187,23 +189,26 @@ figure {
             -o-transform: scaleX(1);
             transform: scaleX(1); }
   #colorlib-aside .colorlib-footer {
+    position: absolute;
     font-size: 15px;
     text-align: center;
     font-weight: 400;
     color: rgba(238, 231, 231, 0.5);
-    margin-top:0px;
+    margin-bottom: 20px;
     padding: 0 20px;
     width: 100%; 
-    bottom: 0;
+    bottom: 0px;
   }
   #colorlib-aside .colorlib-footer p{
     margin-bottom: 0px;
   }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
-        position: relative;
-        margin-top: auto;
-        bottom: 0; } }
+        position: absolute;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      } 
+    }
     #colorlib-aside .colorlib-footer span {
       display: block; }
     #colorlib-aside .colorlib-footer ul {
@@ -243,7 +248,7 @@ figure {
 
 #colorlib-hero {
   min-height: 500px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: #fff url(../images/myimage.jpeg) no-repeat center center;
   width: 100%;
   height: 100%;
   float: left;
@@ -260,6 +265,8 @@ figure {
     }
     #colorlib-hero .flexslider .slides li:nth-child(1) {
       background-image: url(../images/rsz_img_bg_2.jpg);
+      background-size: 100%;
+      background-position: 80% 50%;
     }
     @media screen and (max-width: 768px) {
       #colorlib-hero .flexslider .slides li:nth-child(1) {
@@ -279,9 +286,27 @@ figure {
       }
     }
     #colorlib-hero .flexslider .slides li:nth-child(2) {
-      background-image: url(../images/img_bg_1.jpg);
+      background-image: url(../images/rsz_img_bg_2.jpg);
       background-size: 100%;
       background-position: 80% 50%;
+    }
+    @media screen and (max-width: 768px) {
+      #colorlib-hero .flexslider .slides li:nth-child(2) {
+        background-image: url(../images/rsz_img_bg_2.jpg);
+        background-size: cover;
+        background-position: -350px;
+        background-blend-mode: hue;
+        background-color: #fff;
+        backface-visibility: hidden;
+        opacity: 0.5;
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1050px) {
+      #colorlib-hero .flexslider .slides li:nth-child(2) {
+        background-image: url(../images/rsz_img_bg_2.jpg);
+        background-size: cover;
+        background-position: -160px;
+      }
     }
     #colorlib-hero .flexslider .slides li {
       background-repeat: no-repeat;
@@ -356,12 +381,14 @@ figure {
           font-family: "Quicksand";
         }
           
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .banner2 h1 {
-          color:rgba(255, 255, 255, 0.6);
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner .banner2 h2 {
+          color:rgba(155, 150, 150, 0.6);
           margin-bottom: 20px;
-          font-size: 60px;
+          font-size: 40px;
           line-height: 1.3;
-          font-weight: 700; }
+          font-weight: 700; 
+          font-family: "Quicksand";
+        }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; 
@@ -428,9 +455,10 @@ body.offcanvas {
     transform: translateX(0);
     width: 300px;
     height: 100%;
-    background: #222;#f2f3f7;
+    background: #222;
     z-index: 999;
-    position: fixed; }
+    position: fixed; 
+  }
   body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     top: 0;
     -moz-transform: translateX(300px);
